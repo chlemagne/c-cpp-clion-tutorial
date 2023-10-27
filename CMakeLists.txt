@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(c_cpp_clion_tutorial main.cpp
         ansi/char_echo.cpp
-        ansi/char_echo.hpp)
+        ansi/char_echo.hpp
+        ansi/string_length.cpp
+        ansi/string_length.hpp)
