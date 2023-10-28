@@ -9,4 +9,6 @@ add_executable(c_cpp_clion_tutorial main.cpp
         ansi/string_length.cpp
         ansi/string_length.hpp
         ansi/string_concatenate.cpp
-        ansi/string_concatenate.hpp)
+        ansi/string_concatenate.hpp
+        ansi/string_array_print.cpp
+        ansi/string_array_print.hpp)

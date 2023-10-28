@@ -2,13 +2,15 @@
 #include "ansi/char_echo.hpp"
 #include "ansi/string_length.hpp"
 #include "ansi/string_concatenate.hpp"
+#include "ansi/string_array_print.hpp"
 
-#define DEMO 3
+#define DEMO 4
 
 enum Demo {
     ANSI_CHAR_ECHO = 1,
     ANSI_STRING_LENGTH,
     ANSI_STRING_CONCATENATE,
+    ANSI_STRING_ARRAY_PRINT,
 };
 
 int main() {
@@ -24,6 +26,10 @@ int main() {
 
         case ANSI_STRING_CONCATENATE:
             status = string_concatenate::main();
+            break;
+
+        case ANSI_STRING_ARRAY_PRINT:
+            status = string_array_print::main();
             break;
 
         default:
