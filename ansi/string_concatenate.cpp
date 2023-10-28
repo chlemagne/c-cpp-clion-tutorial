@@ -7,16 +7,16 @@
 #define SIZE        32
 #define STRING_A    "Hello,"
 #define STRING_B    " world!"
-#define NULL_CHAR   '\0'
 
 namespace string_concatenate {
     void strcat(char *s, const char *t) {
         // find the end of s
-        while (*s != NULL_CHAR)
+        // the while-loop condition below is equivalent to ``*s != \0``; same as the next while-loop
+        while (*s)
             s++;
 
         // copy t
-        while ((*s++ = *t++) != NULL_CHAR);
+        while ((*s++ = *t++));
     }
 
     int main() {

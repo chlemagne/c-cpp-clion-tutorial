@@ -4,13 +4,13 @@
 
 #include "string_length.hpp"
 
-#define NULL_CHAR '\0'
 #define DEMO_STRING "Hello, " "world!"
 
 namespace string_length {
     int strlen(const char *s) {
         int len;
-        for (len = 0; *s != NULL_CHAR; len++)
+        // the for-loop condition below is equivalent to ``*s != \0``
+        for (len = 0; *s; len++)
             s++;
 
         return len;
