@@ -3,14 +3,16 @@
 #include "ansi/string_length.hpp"
 #include "ansi/string_concatenate.hpp"
 #include "ansi/string_array_print.hpp"
+#include "ansi/string_compare.hpp"
 
-#define DEMO 4
+#define DEMO 5
 
 enum Demo {
     ANSI_CHAR_ECHO = 1,
     ANSI_STRING_LENGTH,
     ANSI_STRING_CONCATENATE,
     ANSI_STRING_ARRAY_PRINT,
+    ANSI_STRING_COMPARE,
 };
 
 int main() {
@@ -30,6 +32,10 @@ int main() {
 
         case ANSI_STRING_ARRAY_PRINT:
             status = string_array_print::main();
+            break;
+
+        case ANSI_STRING_COMPARE:
+            status = string_compare::main();
             break;
 
         default:
