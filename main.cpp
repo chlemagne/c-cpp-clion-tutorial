@@ -5,8 +5,9 @@
 #include "ansi/string_array_print.hpp"
 #include "ansi/string_compare.hpp"
 #include "modern/static_casting.hpp"
+#include "modern/range_based_loop.hpp"
 
-#define DEMO 6
+#define DEMO 7
 
 enum Demo {
     ANSI_CHAR_ECHO = 1,
@@ -15,6 +16,7 @@ enum Demo {
     ANSI_STRING_ARRAY_PRINT,
     ANSI_STRING_COMPARE,
     MODERN_STATIC_CASTING,
+    MODERN_RANGE_BASED_LOOP,
 };
 
 int main() {
@@ -42,6 +44,10 @@ int main() {
 
         case MODERN_STATIC_CASTING:
             status = static_casting::main();
+            break;
+
+        case MODERN_RANGE_BASED_LOOP:
+            status = range_based_loop::main();
             break;
 
         default:
