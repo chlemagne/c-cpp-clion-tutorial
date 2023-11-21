@@ -13,4 +13,6 @@ add_executable(c_cpp_clion_tutorial main.cpp
         ansi/string_array_print.cpp
         ansi/string_array_print.hpp
         ansi/string_compare.cpp
-        ansi/string_compare.hpp)
+        ansi/string_compare.hpp
+        modern/static_casting.cpp
+        modern/static_casting.hpp)

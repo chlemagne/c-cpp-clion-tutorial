@@ -4,8 +4,9 @@
 #include "ansi/string_concatenate.hpp"
 #include "ansi/string_array_print.hpp"
 #include "ansi/string_compare.hpp"
+#include "modern/static_casting.hpp"
 
-#define DEMO 5
+#define DEMO 6
 
 enum Demo {
     ANSI_CHAR_ECHO = 1,
@@ -13,6 +14,7 @@ enum Demo {
     ANSI_STRING_CONCATENATE,
     ANSI_STRING_ARRAY_PRINT,
     ANSI_STRING_COMPARE,
+    MODERN_STATIC_CASTING,
 };
 
 int main() {
@@ -36,6 +38,10 @@ int main() {
 
         case ANSI_STRING_COMPARE:
             status = string_compare::main();
+            break;
+
+        case MODERN_STATIC_CASTING:
+            status = static_casting::main();
             break;
 
         default:
