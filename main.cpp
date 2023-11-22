@@ -6,8 +6,9 @@
 #include "ansi/string_compare.hpp"
 #include "modern/static_casting.hpp"
 #include "modern/range_based_loop.hpp"
+#include "modern/overloaded_function.hpp"
 
-#define DEMO 7
+#define DEMO 8
 
 enum Demo {
     ANSI_CHAR_ECHO = 1,
@@ -17,6 +18,7 @@ enum Demo {
     ANSI_STRING_COMPARE,
     MODERN_STATIC_CASTING,
     MODERN_RANGE_BASED_LOOP,
+    MODERN_OVERLOADED_FUNCTIONS,
 };
 
 int main() {
@@ -48,6 +50,10 @@ int main() {
 
         case MODERN_RANGE_BASED_LOOP:
             status = range_based_loop::main();
+            break;
+
+        case MODERN_OVERLOADED_FUNCTIONS:
+            status = overloaded_function::main();
             break;
 
         default:

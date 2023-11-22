@@ -17,4 +17,6 @@ add_executable(c_cpp_clion_tutorial main.cpp
         modern/static_casting.cpp
         modern/static_casting.hpp
         modern/range_based_loop.cpp
-        modern/range_based_loop.hpp)
+        modern/range_based_loop.hpp
+        modern/overloaded_function.cpp
+        modern/overloaded_function.hpp)
